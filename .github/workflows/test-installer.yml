@@ -217,7 +217,7 @@ jobs:
       - name: Install Python deps
         run: uv sync --frozen || uv sync
 
-      - name: Locate installer
+      - name: Isolate installer under test
         id: installer
         shell: pwsh
         run: |
